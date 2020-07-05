@@ -268,6 +268,124 @@ a {
   padding: 0 3vw;
 }
 
+header {
+  height: 100vh;
+  background: #A3D0CB;
+}
+
+header .mainNav {
+  background: #718084;
+  height: 10vh;
+}
+
+header .mainNav ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .mainNav li {
+  padding: 0 20px;
+}
+
+header .mainNav a {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+header .headerSectionContainer {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+header .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 3vw;
+}
+
+header .name h1 {
+  color: #3F3F48;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+header .name p {
+  font-weight: 700;
+  color: white;
+  font-size: 3rem;
+}
+
+header .name,
+header .circles {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+header .circle {
+  border-radius: 50%;
+}
+
+header .circleOne {
+  background: #718084;
+  opacity: 0.5;
+  width: 400px;
+  height: 400px;
+  z-index: 10;
+  position: absolute;
+  top: -70px;
+  right: 280px;
+}
+
+header .circleTwo,
+header .circleThree {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .circleTwo {
+  background: #718084;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: -90px;
+  right: -170px;
+  z-index: 40;
+}
+
+header .circleThree {
+  background: #718084;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 200px;
+  right: 220px;
+  z-index: 30;
+  opacity: 0.9;
+}
+
 .skills li {
   width: 50px;
 }
