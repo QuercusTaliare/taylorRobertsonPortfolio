@@ -271,3 +271,12 @@ a {
 .skills li {
   width: 50px;
 }
+
+.contact .squigglyContainer {
+  width: 50px;
+}
+
+.contact .squigglyLine {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
