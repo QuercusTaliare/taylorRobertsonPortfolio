@@ -1,11 +1,11 @@
 header {
   height: 100vh;
-  background: $mint;
+  background: $secondary;
  
 
 
   .mainNav {
-    background: $grey;
+    background: $primary;
     height: 10vh;
   }
 
@@ -24,6 +24,10 @@ header {
     color: white;
     font-weight: 700;
     font-size: 2rem;
+
+    &:hover {
+      border-bottom: solid 5px $highlight;
+    }
   }
 
   .headerSectionContainer {
@@ -51,7 +55,7 @@ header {
 
   .name p {
     font-weight: 700;
-    color: white;
+    color: $light-grey;
     font-size: 3rem;
   }
 
@@ -71,7 +75,7 @@ header {
   }
 
   .circleOne {
-    background: $grey;
+    background: $primary;
     opacity: 0.5;
     width: 400px;
     height: 400px;
@@ -87,17 +91,18 @@ header {
   }
 
   .circleTwo {
-    background: $grey;
+    background: $primary;
     width: 600px;
     height: 600px;
     position: absolute;
     top: -90px;
-    right: -170px;
+    right: -130px;
     z-index: 40;
+    filter: sepia(100%);
   }
 
   .circleThree {
-    background: $grey;
+    background: $primary;
     width: 400px;
     height: 400px;
     position: absolute;

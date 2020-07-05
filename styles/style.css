@@ -270,11 +270,11 @@ a {
 
 header {
   height: 100vh;
-  background: #A3D0CB;
+  background: #C4FBFF;
 }
 
 header .mainNav {
-  background: #718084;
+  background: #05B6C3;
   height: 10vh;
 }
 
@@ -299,6 +299,10 @@ header .mainNav a {
   color: white;
   font-weight: 700;
   font-size: 2rem;
+}
+
+header .mainNav a:hover {
+  border-bottom: solid 5px #E6AF2E;
 }
 
 header .headerSectionContainer {
@@ -333,7 +337,7 @@ header .name h1 {
 
 header .name p {
   font-weight: 700;
-  color: white;
+  color: #909090;
   font-size: 3rem;
 }
 
@@ -349,7 +353,7 @@ header .circle {
 }
 
 header .circleOne {
-  background: #718084;
+  background: #05B6C3;
   opacity: 0.5;
   width: 400px;
   height: 400px;
@@ -366,17 +370,19 @@ header .circleThree {
 }
 
 header .circleTwo {
-  background: #718084;
+  background: #05B6C3;
   width: 600px;
   height: 600px;
   position: absolute;
   top: -90px;
-  right: -170px;
+  right: -130px;
   z-index: 40;
+  -webkit-filter: sepia(100%);
+          filter: sepia(100%);
 }
 
 header .circleThree {
-  background: #718084;
+  background: #05B6C3;
   width: 400px;
   height: 400px;
   position: absolute;
