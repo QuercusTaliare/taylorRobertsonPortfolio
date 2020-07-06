@@ -254,6 +254,11 @@ h2 {
   font-size: 4rem;
 }
 
+h3 {
+  color: #3F3F48;
+  font-size: 3rem;
+}
+
 img {
   width: 100%;
   display: block;
@@ -508,6 +513,28 @@ header .circleThree {
   display: table-cell;
   padding: 3em;
   vertical-align: middle;
+}
+
+.portfolio {
+  background: #C4FBFF;
+}
+
+.portfolio .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio .projectLeft,
+.portfolio .projectRight {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.portfolio .projectImgContainer {
+  width: 400px;
+  border: solid 5px #3F3F48;
 }
 
 .skills li {

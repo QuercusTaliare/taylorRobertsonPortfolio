@@ -1,0 +1,21 @@
+.portfolio {
+
+  background: $secondary;
+
+  .project {
+    display: flex;
+  }
+
+  .projectLeft,
+  .projectRight {
+    flex: 1 1 50%;
+  }
+
+  .projectImgContainer {
+    width: 400px;
+    border: solid 5px $dark-grey
+  }
+
+
+
+}
