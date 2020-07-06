@@ -314,11 +314,11 @@ header .mainNav a {
 }
 
 header .mainNav a:hover {
-  border-bottom: solid 5px #E6AF2E;
+  border-bottom: solid 5px #ef4c0a;
 }
 
 header .headerSectionContainer {
-  height: 90vh;
+  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,6 +402,42 @@ header .circleThree {
   right: 220px;
   z-index: 30;
   opacity: 0.9;
+}
+
+header .headerArrowContainer {
+  height: 5vh;
+  text-align: center;
+}
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header .headerArrowContainer i {
+  color: #ef4c0a;
+  font-size: 2.5rem;
+  -webkit-animation: flickerAnimation 2s infinite;
+          animation: flickerAnimation 2s infinite;
 }
 
 .about {
@@ -583,8 +619,8 @@ header .circleThree {
 }
 
 .portfolio .projectLinks a:hover, .portfolio .projectLinks a:focus {
-  -webkit-text-decoration-color: #E6AF2E;
-          text-decoration-color: #E6AF2E;
+  -webkit-text-decoration-color: #ef4c0a;
+          text-decoration-color: #ef4c0a;
 }
 
 .portfolio .projectSkills {
@@ -673,6 +709,7 @@ header .circleThree {
   display: -ms-flexbox;
   display: flex;
   padding: 40px 0 0 0;
+  background: #C4FBFF;
 }
 
 .contact .contactTitle,
@@ -690,7 +727,6 @@ header .circleThree {
 }
 
 .contact .contactTitle {
-  background: #C4FBFF;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -701,14 +737,11 @@ header .circleThree {
   content: "";
   width: 0;
   height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid #718084;
+  border-top: 80px solid transparent;
+  border-left: 80px solid #718084;
   position: absolute;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  bottom: -38px;
-  left: -9px;
+  bottom: 0px;
+  left: 0px;
 }
 
 .contact .contactTitle h2 {
@@ -725,10 +758,9 @@ header .circleThree {
 
 .contact .contactTitle p {
   text-align: center;
-}
-
-.contact .contactForm {
-  background: #05B6C3;
+  padding: 60px 0;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
 
 .contact .squigglyContainer {
@@ -770,7 +802,8 @@ header .circleThree {
 
 .contact form .labelText {
   margin: 0 0 10px 0;
-  color: white;
+  color: #3F3F48;
+  font-weight: 700;
 }
 
 .contact form input {
@@ -787,7 +820,7 @@ header .circleThree {
 }
 
 .contact form button {
-  background: #E6AF2E;
+  background: #ef4c0a;
   padding: 15px 40px;
   border-radius: 4px;
   border: none;
@@ -795,4 +828,9 @@ header .circleThree {
   text-transform: uppercase;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
+}
+
+footer {
+  background: #05B6C3;
+  height: 30vh;
 }
