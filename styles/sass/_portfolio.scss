@@ -2,8 +2,14 @@
 
   background: $secondary;
 
+  h2 {
+    text-align: center;
+    padding: 40px 0;
+  }
+
   .project {
     display: flex;
+    padding: 20px 0;
   }
 
   .projectLeft,
@@ -13,7 +19,56 @@
 
   .projectImgContainer {
     width: 400px;
-    border: solid 5px $dark-grey
+    border: solid 5px $dark-grey;
+    margin: 0 auto;
+  }
+
+  .projectText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3vw;
+  }
+
+  .projectText p {
+    width: 400px;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+  }
+
+  .projectLinks {
+    display: flex;
+  }
+
+  .projectLinks li {
+    padding: 10px;
+  }
+
+  .projectLinks a {
+    text-decoration: underline $primary;
+    text-transform: uppercase;
+    padding: 10px;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: $highlight;
+    }
+  }
+
+  .projectSkills {
+    display: flex;
+  }
+
+  .projectSkills li {
+    padding: 10px;
+  }
+
+  .projectSkills i {
+    font-size: 3rem;
+  }
+
+  .projectSkills img {
+    width: 3rem;
   }
 
 
