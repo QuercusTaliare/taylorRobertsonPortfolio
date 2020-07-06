@@ -271,6 +271,7 @@ li {
 a {
   text-decoration: none;
   color: black;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .wrapper {
@@ -667,11 +668,131 @@ header .circleThree {
   text-transform: uppercase;
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 0 0 0;
+}
+
+.contact .contactTitle,
+.contact .contactForm {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .contactTitle {
+  background: #C4FBFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.contact .contactTitle::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid #718084;
+  position: absolute;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  bottom: -38px;
+  left: -9px;
+}
+
+.contact .contactTitle h2 {
+  padding: 20px 0;
+}
+
+.contact .contactTitle img {
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contact .contactTitle p {
+  text-align: center;
+}
+
+.contact .contactForm {
+  background: #05B6C3;
+}
+
 .contact .squigglyContainer {
-  width: 50px;
+  width: 40px;
+  margin: 20px 0 0 30px;
 }
 
 .contact .squigglyLine {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact form .formContainer {
+  margin: 10px auto;
+}
+
+.contact form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact form .labelText {
+  margin: 0 0 10px 0;
+  color: white;
+}
+
+.contact form input {
+  padding: 5px 50px;
+}
+
+.contact form input,
+.contact form textarea {
+  border-radius: 4px;
+  border: none;
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  padding: 5px;
+}
+
+.contact form button {
+  background: #E6AF2E;
+  padding: 15px 40px;
+  border-radius: 4px;
+  border: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
 }

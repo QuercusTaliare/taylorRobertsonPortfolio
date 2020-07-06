@@ -334,10 +334,10 @@
         <div class="contactTitle">
 
           <h2>Get In Touch</h2>
-          <div>
+          <div class="contactImgContainer">
             <!-- circular image  -->
             <img src="./assets/telephone.jpg" alt="old-timey black telephone within a red phone booth">
-            <p>email</p>
+            <p>josephtaylorrobertson<br>at<br>gmail.com</p>
           </div>
           <div>
             <!-- bottom-left triangle  -->
@@ -351,19 +351,31 @@
             <img src="https://img.icons8.com/ios-filled/100/000000/squiggly-line.png" alt="squiggly line" class="squigglyLine" />
           </div>
           <form>
-            <label for="name">
-              Name
-              <input type="text" id="name">
-            </label>
-            <label for="email">
-              Email
-              <input type="email" id="email">
-            </label>
-            <label for="message">
-              Leave Message
-              <textarea name="" id="message" cols="30" rows="10"></textarea>
-            </label>
-            <button type="submit">Submit</button>
+            <div class="formContainer">
+              <label for="name">
+                <span class="labelText">Name</span>
+                <input type="text" id="name">
+              </label>
+            </div>
+            
+            <div class="formContainer">
+              <label for="email">
+                <span class="labelText">Email</span>
+                <input type="email" id="email">
+              </label>
+            </div>
+
+            <div class="formContainer">
+              <label for="message">
+                <span class="labelText">Leave Message</span>
+                <textarea name="" id="message" cols="30" rows="10"></textarea>
+              </label>
+            </div>
+
+            <div class="formContainer">
+              <button type="submit">Submit</button>
+            </div>
+
           </form>
         </div>
 
