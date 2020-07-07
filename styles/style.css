@@ -509,6 +509,26 @@ header .headerArrowContainer i {
   margin: 0 0 30px 0;
 }
 
+.about .aboutRight h2 span {
+  position: relative;
+}
+
+.about .aboutRight h2 span::after {
+  display: block;
+  content: "";
+  background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: -70px;
+  left: 65px;
+  width: 100px;
+  height: 100px;
+}
+
 .about .circle {
   position: relative;
   display: block;
@@ -557,7 +577,7 @@ header .headerArrowContainer i {
 }
 
 .portfolio {
-  background: #C4FBFF;
+  background: #E1EFF0;
 }
 
 .portfolio h2 {
@@ -582,6 +602,22 @@ header .headerArrowContainer i {
   top: -40px;
   right: -10px;
   z-index: -10;
+}
+
+.portfolio h2 span::after {
+  display: block;
+  content: "";
+  background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0px;
+  right: -60px;
+  width: 100px;
+  height: 100px;
 }
 
 .portfolio .project {
@@ -691,6 +727,22 @@ header .headerArrowContainer i {
   z-index: -10;
 }
 
+.skills h2 span::after {
+  display: block;
+  content: "";
+  background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -70px;
+  left: 110px;
+  width: 100px;
+  height: 100px;
+}
+
 .skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -735,7 +787,7 @@ header .headerArrowContainer i {
   display: -ms-flexbox;
   display: flex;
   padding: 40px 0 0 0;
-  background: #C4FBFF;
+  background: #E1EFF0;
 }
 
 .contact .contactTitle,
@@ -759,19 +811,43 @@ header .headerArrowContainer i {
   position: relative;
 }
 
-.contact .contactTitle::before {
+.contact .contactTitle h2 {
+  padding: 20px 0;
+}
+
+.contact .contactTitle h2 span {
+  position: relative;
+  z-index: 10;
+}
+
+.contact .contactTitle h2 span::before {
   content: "";
   width: 0;
   height: 0;
-  border-top: 80px solid transparent;
-  border-left: 80px solid #718084;
+  border-top: 100px solid transparent;
+  border-left: 100px solid #40BEC8;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  top: -40px;
+  right: -10px;
+  z-index: -10;
 }
 
-.contact .contactTitle h2 {
-  padding: 20px 0;
+.contact .contactTitle h2 span::after {
+  display: block;
+  content: "";
+  background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: -55px;
+  right: -50px;
+  width: 100px;
+  height: 100px;
 }
 
 .contact .contactTitle img {
@@ -784,19 +860,27 @@ header .headerArrowContainer i {
 
 .contact .contactTitle p {
   text-align: center;
-  padding: 60px 0;
+  padding: 60px 0 10px 0;
   font-weight: 700;
   font-size: 2.5rem;
 }
 
-.contact .squigglyContainer {
-  width: 40px;
-  margin: 20px 0 0 30px;
+.contact .socialList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.contact .squigglyLine {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+.contact .socialList li {
+  margin: 10px;
+}
+
+.contact .socialList a {
+  padding: 10px;
+}
+
+.contact .socialList i {
+  font-size: 3rem;
 }
 
 .contact form {
@@ -839,7 +923,7 @@ header .headerArrowContainer i {
 .contact form input,
 .contact form textarea {
   border-radius: 4px;
-  border: none;
+  border: solid 2px #40BEC8;
   font-size: 2rem;
   font-family: "Ubuntu", sans-serif;
   padding: 5px;

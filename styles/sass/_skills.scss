@@ -22,19 +22,20 @@
       z-index: -10;
     }
 
-    // &::after {
-    //   // content: url("https://img.icons8.com/ios-filled/100/000000/squiggly-line.png");
-    //   display: block;
-    //   content: "";
-    //   background-image: url("https://img.icons8.com/ios-filled/100/000000/squiggly-line.png");
-    //   background-size: 100% 100%;
-    //   position: absolute;
-    //   transform: rotate(45deg);
-      
-    //   top: 0;
-    //   left: 0;
-    //   width: 10px;
-    // }
+    &::after {
+      display: block;
+      content: "";
+      background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 65%;
+      position: absolute;
+      transform: rotate(45deg);
+      top: -70px;
+      left: 110px;
+      width: 100px;
+      height: 100px;
+    }
 
 
   }

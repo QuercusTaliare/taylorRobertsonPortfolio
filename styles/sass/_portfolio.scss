@@ -1,6 +1,6 @@
 .portfolio {
 
-  background: $secondary;
+  background: $secondary-light;
 
   h2 {
     text-align: center;
@@ -23,6 +23,23 @@
       right: -10px;
       z-index: -10;
     }
+
+    &::after {
+      display: block;
+      content: "";
+      background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 65%;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 0px;
+      right: -60px;
+      width: 100px;
+      height: 100px;
+    }
+
+
   }
 
   .project {

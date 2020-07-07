@@ -2,7 +2,7 @@
 
   display: flex;
   padding: 40px 0 0 0;
-  background: $secondary;
+  background: $secondary-light;
 
   .contactTitle,
   .contactForm {
@@ -16,24 +16,48 @@
     align-items: center;
     position: relative;
 
+    
+  }
+
+  .contactTitle h2 {
+    padding: 20px 0;
+    
+
+  }
+
+  .contactTitle h2 span {
+    position: relative;
+    z-index: 10;
+
     &::before {
 
       content: "";
       width: 0; 
       height: 0; 
-      border-top: 80px solid transparent;
-      // border-bottom: 60px solid transparent;
-      border-left: 80px solid $grey;
+      border-top: 100px solid transparent;
+      border-left: 100px solid $primary-light;
       position: absolute;
-      // transform: rotate(135deg);
-      bottom: 0px;
-      left: 0px;
-      // z-index: -10;
+      transform: rotate(270deg);
+      top: -40px;
+      right: -10px;
+      z-index: -10;
     }
-  }
 
-  .contactTitle h2 {
-    padding: 20px 0;
+    &::after {
+      display: block;
+      content: "";
+      background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 65%;
+      position: absolute;
+      transform: rotate(45deg);
+      bottom: -55px;
+      right: -50px;
+      width: 100px;
+      height: 100px;
+    }
+
   }
 
   .contactTitle .contactImgContainer {
@@ -54,23 +78,29 @@
 
   .contactTitle p {
     text-align: center;
-    padding: 60px 0;
+    padding: 60px 0 10px 0;
     font-weight: 700;
     font-size: 2.5rem;
   }
 
+  .socialList {
+    display: flex;
+  }
+
+  .socialList li {
+    margin: 10px;
+  }
+
+  .socialList a {
+    padding: 10px;
+  }
+
+  .socialList i {
+    font-size: 3rem;
+  }
+
   .contactForm {
     // background: $secondary;
-  }
-
-
-  .squigglyContainer {
-    width: 40px;
-    margin: 20px 0 0 30px;
-  }
-
-  .squigglyLine {
-    transform: rotate(45deg);
   }
 
   form {
@@ -105,7 +135,7 @@
   form input,
   form textarea {
     border-radius: 4px;
-    border: none;
+    border: solid 2px $primary-light;
     font-size: 2rem;
     font-family: $main-font;
     padding: 5px;
