@@ -977,7 +977,6 @@ header .arrowContainer {
 
 footer {
   background: #05B6C3;
-  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -990,21 +989,12 @@ footer {
           align-items: center;
 }
 
-footer .socialList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+footer .personal p {
+  font-size: 2rem;
 }
 
-footer .socialList li {
-  margin: 10px;
-}
-
-footer .socialList a {
-  padding: 10px;
-}
-
-footer .socialList i {
+footer .personal span {
+  color: red;
   font-size: 3rem;
 }
 
@@ -1019,6 +1009,16 @@ footer .thanks {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px 0;
+}
+
+footer .thanks h4 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+footer .thanks p {
+  padding: 5px 0;
 }
 
 footer .thanks a {

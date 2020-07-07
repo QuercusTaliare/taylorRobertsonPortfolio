@@ -1,29 +1,15 @@
 footer {
   background: $primary;
-  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  .social,
-  .thanks {
-    // flex: 1 1 auto;
-
+  .personal p {
+    font-size: 2rem;
   }
 
-  .socialList {
-    display: flex;
-  }
-
-  .socialList li {
-    margin: 10px;
-  }
-
-  .socialList a {
-    padding: 10px;
-  }
-
-  .socialList i {
+  .personal span {
+    color: red;
     font-size: 3rem;
   }
 
@@ -31,6 +17,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px 0;
+  }
+
+  .thanks h4 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .thanks p {
+    padding: 5px 0;
   }
 
   .thanks a {
