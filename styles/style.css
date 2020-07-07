@@ -1096,6 +1096,12 @@ footer .thanks a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1107,6 +1113,9 @@ footer .thanks a {
   }
   .about .circleContent p {
     text-align: left;
+  }
+  .contact .contactTitle p {
+    font-size: 2rem;
   }
 }
 

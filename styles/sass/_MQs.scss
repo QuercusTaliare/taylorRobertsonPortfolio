@@ -70,6 +70,13 @@
 
 
   }
+
+  .contact {
+
+    flex-direction: column;
+
+
+  }
 }
 
 @media (max-width: 600px) {
@@ -88,6 +95,14 @@
     }
     
 
+
+  }
+
+  .contact {
+
+    .contactTitle p {
+      font-size: 2rem;
+    }
 
   }
 }
