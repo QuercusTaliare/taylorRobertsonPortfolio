@@ -280,6 +280,41 @@ a {
   padding: 0 3vw;
 }
 
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.arrowContainer {
+  text-align: center;
+}
+
+.arrowContainer i {
+  color: #ef4c0a;
+  font-size: 2.5rem;
+  -webkit-animation: flickerAnimation 2s infinite;
+          animation: flickerAnimation 2s infinite;
+}
+
 header {
   height: 100vh;
   background: #C4FBFF;
@@ -409,39 +444,15 @@ header .headerArrowContainer {
   text-align: center;
 }
 
-@-webkit-keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes flickerAnimation {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-header .headerArrowContainer i {
-  color: #ef4c0a;
-  font-size: 2.5rem;
-  -webkit-animation: flickerAnimation 2s infinite;
-          animation: flickerAnimation 2s infinite;
+header .arrowContainer {
+  height: 5vh;
 }
 
 .about {
   background: #05B6C3;
+}
+
+.about .aboutContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,6 +468,10 @@ header .headerArrowContainer i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -576,8 +591,12 @@ header .headerArrowContainer i {
   padding: 10px 0;
 }
 
+.about .arrowContainer {
+  padding: 10px 0;
+}
+
 .portfolio {
-  background: #E1EFF0;
+  background: #C4FBFF;
 }
 
 .portfolio h2 {
@@ -625,6 +644,14 @@ header .headerArrowContainer i {
   display: -ms-flexbox;
   display: flex;
   padding: 20px 0;
+}
+
+.portfolio .project:nth-child(odd) {
+  background: #D0F2F4;
+}
+
+.portfolio .project:nth-child(even) {
+  background: #C4FBFF;
 }
 
 .portfolio .projectLeft,
@@ -702,6 +729,10 @@ header .headerArrowContainer i {
 
 .portfolio .projectSkills img {
   width: 3rem;
+}
+
+.portfolio .arrowContainer {
+  padding: 10px 0;
 }
 
 .skills h2 {
@@ -782,12 +813,16 @@ header .headerArrowContainer i {
   text-transform: uppercase;
 }
 
+.skills .arrowContainer {
+  padding: 10px 0;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 40px 0 0 0;
-  background: #E1EFF0;
+  background: #D0F2F4;
 }
 
 .contact .contactTitle,

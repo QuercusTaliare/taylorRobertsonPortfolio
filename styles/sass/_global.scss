@@ -52,3 +52,20 @@ a {
     margin: 0 auto;
     padding: 0 3vw;
 }
+
+// https://stackoverflow.com/questions/23985018/simple-css-animation-loop-fading-in-out-loading-text
+  @keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+
+.arrowContainer {
+    text-align: center;
+}
+
+.arrowContainer i {
+    color: $highlight;
+    font-size: 2.5rem;
+    animation: flickerAnimation 2s infinite;
+  }

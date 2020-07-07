@@ -1,21 +1,25 @@
 .about {
 
   background: $primary;
-  display: flex;
-  align-items: center;
-  // height: 100vh;
 
-  .aboutLeft,
-  .aboutRight {
-    // flex: 1 1 50%;
+  .aboutContainer {
+
+    display: flex;
+    align-items: center;
+    
   }
 
   .aboutLeft {
     flex: 1 1 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
+  // .aboutLeft .arrowContainer {
+  //   margin: 100px;
+  // }
 
   .aboutImageContainer {
     width: 20vw;
@@ -127,6 +131,10 @@
   }
 
   .circleContent p {
+    padding: 10px 0;
+  }
+
+  .arrowContainer {
     padding: 10px 0;
   }
 

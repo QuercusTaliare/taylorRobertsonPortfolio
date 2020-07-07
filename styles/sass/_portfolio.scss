@@ -1,6 +1,6 @@
 .portfolio {
 
-  background: $secondary-light;
+  background: $secondary;
 
   h2 {
     text-align: center;
@@ -45,6 +45,14 @@
   .project {
     display: flex;
     padding: 20px 0;
+  }
+
+  .project:nth-child(odd) {
+    background: $secondary-light;
+  }
+
+  .project:nth-child(even) {
+    background: $secondary;
   }
 
   .projectLeft,
@@ -108,6 +116,10 @@
 
   .projectSkills img {
     width: 3rem;
+  }
+
+  .arrowContainer {
+    padding: 10px 0;
   }
 
 
