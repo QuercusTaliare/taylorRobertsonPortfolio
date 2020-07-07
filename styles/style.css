@@ -550,7 +550,7 @@ header .arrowContainer {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   bottom: -70px;
-  left: 30%;
+  left: 27%;
   width: 100px;
   height: 100px;
 }
@@ -1042,7 +1042,7 @@ footer .thanks h4 {
 }
 
 footer .thanks p {
-  padding: 5px 0;
+  padding: 5px;
 }
 
 footer .thanks a {
@@ -1120,6 +1120,9 @@ footer .thanks a {
 }
 
 @media (max-width: 450px) {
+  .wrapper {
+    padding: 0;
+  }
   header .mainNav ul {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -1154,5 +1157,26 @@ footer .thanks a {
   }
   .portfolio .projectLinks li {
     padding: 5px 10px;
+  }
+  .skills h2 span::after {
+    left: 80px;
+  }
+  .contact .contactTitle h2 {
+    font-size: 3rem;
+  }
+  .contact .contactTitle h2 span::before {
+    border-top: 90px solid transparent;
+    border-left: 90px solid #40BEC8;
+  }
+  .contact .contactTitle h2 span::after {
+    background-size: 50%;
+    right: 15px;
+  }
+  .contact .contactTitle p {
+    font-size: 1.6rem;
+  }
+  .contact form input,
+  .contact form textarea {
+    font-size: 1.6rem;
   }
 }

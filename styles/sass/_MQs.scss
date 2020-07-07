@@ -68,15 +68,12 @@
       flex-direction: column;
     }
 
-
   }
 
   .contact {
-
     flex-direction: column;
-
-
   }
+
 }
 
 @media (max-width: 600px) {
@@ -108,6 +105,11 @@
 }
 
 @media (max-width: 450px) {
+  
+  .wrapper {
+    padding: 0;
+  }
+  
   header {
 
     .mainNav ul {
@@ -161,5 +163,45 @@
     .projectLinks li {
       padding: 5px 10px;
     }
+  }
+
+  .skills {
+    h2 span {
+      &::after {
+        left: 80px;
+      }
+    }
+  }
+
+  .contact {
+    
+    .contactTitle h2 {
+      font-size: 3rem;
+    }
+
+    .contactTitle h2 span {
+
+      &::before {
+        border-top: 90px solid transparent;
+        border-left: 90px solid $primary-light;
+      }
+
+      &::after {
+        
+        background-size: 50%;
+        right: 15px;
+      }
+
+    }
+
+    .contactTitle p {
+      font-size: 1.6rem;
+    }
+
+    form input,
+    form textarea {
+      font-size: 1.6rem;
+    }
+
   }
 }
