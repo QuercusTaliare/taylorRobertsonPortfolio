@@ -1,0 +1,55 @@
+@media (max-width: 1080px) {
+  header {
+
+    .circleOne,
+    .circleThree {
+      top: -90px;
+      right: -130px;
+      width: 0px;
+      height: 0px;
+    }
+
+
+
+  }
+
+
+}
+
+@media (max-width: 950px) {
+  header {
+
+    .circleTwo {
+      width: 200px;
+      height: 200px;
+      top: 10px;
+      right: 20px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+
+    .mainNav ul {
+      justify-content: flex-end;
+    }
+
+    .mainNav .bars {
+      display: block;
+    }
+
+    .mainNav .desktopItem {
+      display: none;
+    }
+
+    .name h1 {
+      font-size: 3rem;
+    }
+    .name p {
+      font-size: 2rem;
+    }
+
+    
+  }
+}

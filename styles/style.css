@@ -342,13 +342,17 @@ header .mainNav li {
   padding: 0 20px;
 }
 
+header .mainNav .bars {
+  display: none;
+}
+
 header .mainNav a {
   color: white;
   font-weight: 700;
   font-size: 2rem;
 }
 
-header .mainNav a:hover {
+header .mainNav a:hover, header .mainNav a:focus {
   border-bottom: solid 5px #ef4c0a;
 }
 
@@ -380,12 +384,16 @@ header .name h1 {
   font-size: 6rem;
   text-transform: uppercase;
   letter-spacing: -1px;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 header .name p {
   font-weight: 700;
   color: #909090;
   font-size: 3rem;
+  -webkit-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 header .name,
@@ -426,6 +434,8 @@ header .circleTwo {
   z-index: 40;
   -webkit-filter: sepia(100%);
           filter: sepia(100%);
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 header .circleThree {
@@ -439,9 +449,10 @@ header .circleThree {
   opacity: 0.9;
 }
 
-header .headerArrowContainer {
-  height: 5vh;
-  text-align: center;
+header .circleOne,
+header .circleThree {
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
 }
 
 header .arrowContainer {
@@ -1023,4 +1034,43 @@ footer .thanks p {
 
 footer .thanks a {
   text-decoration: underline;
+}
+
+@media (max-width: 1080px) {
+  header .circleOne,
+  header .circleThree {
+    top: -90px;
+    right: -130px;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 950px) {
+  header .circleTwo {
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  header .mainNav ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  header .mainNav .bars {
+    display: block;
+  }
+  header .mainNav .desktopItem {
+    display: none;
+  }
+  header .name h1 {
+    font-size: 3rem;
+  }
+  header .name p {
+    font-size: 2rem;
+  }
 }
