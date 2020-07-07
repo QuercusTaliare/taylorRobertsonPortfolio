@@ -475,14 +475,13 @@ header .headerArrowContainer i {
   content: "";
   width: 0;
   height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid #C4FBFF;
+  border-top: 80px solid transparent;
+  border-left: 80px solid #C4FBFF;
   position: absolute;
-  -webkit-transform: rotate(225deg);
-          transform: rotate(225deg);
-  top: -60px;
-  left: -30px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: -20px;
+  left: -20px;
   z-index: -10;
 }
 
@@ -490,14 +489,13 @@ header .headerArrowContainer i {
   content: "";
   width: 0;
   height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid #C4FBFF;
+  border-top: 80px solid transparent;
+  border-left: 80px solid #C4FBFF;
   position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  bottom: -60px;
-  right: -30px;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  bottom: -20px;
+  right: -20px;
   z-index: -10;
 }
 
@@ -564,7 +562,26 @@ header .headerArrowContainer i {
 
 .portfolio h2 {
   text-align: center;
-  padding: 40px 0;
+  padding: 60px 0;
+}
+
+.portfolio h2 span {
+  position: relative;
+  z-index: 10;
+}
+
+.portfolio h2 span::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-left: 100px solid #40BEC8;
+  position: absolute;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  top: -40px;
+  right: -10px;
+  z-index: -10;
 }
 
 .portfolio .project {
@@ -664,14 +681,13 @@ header .headerArrowContainer i {
   content: "";
   width: 0;
   height: 0;
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid #C4FBFF;
+  border-top: 100px solid transparent;
+  border-left: 100px solid #C4FBFF;
   position: absolute;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  top: -60px;
-  left: 115px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: -40px;
+  right: -10px;
   z-index: -10;
 }
 

@@ -4,7 +4,25 @@
 
   h2 {
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
+  }
+
+  h2 span {
+    position: relative;
+    z-index: 10;
+
+    &::before {
+      content: "";
+      width: 0; 
+      height: 0; 
+      border-top: 100px solid transparent;
+      border-left: 100px solid $primary-light;
+      position: absolute;
+      transform: rotate(270deg);
+      top: -40px;
+      right: -10px;
+      z-index: -10;
+    }
   }
 
   .project {

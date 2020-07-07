@@ -3,7 +3,6 @@
   h2 {
     padding: 60px 0;
     text-align: center;
-    // position: relative;
 
   }
 
@@ -14,13 +13,12 @@
       content: "";
       width: 0; 
       height: 0; 
-      border-top: 60px solid transparent;
-      border-bottom: 60px solid transparent;
-      border-left: 60px solid $secondary;
+      border-top: 100px solid transparent;
+      border-left: 100px solid $secondary;
       position: absolute;
-      transform: rotate(-45deg);
-      top: -60px;
-      left: 115px;
+      transform: rotate(180deg);
+      top: -40px;
+      right: -10px;
       z-index: -10;
     }
 
