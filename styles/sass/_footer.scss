@@ -1,6 +1,40 @@
 footer {
   background: $primary;
   height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  .social,
+  .thanks {
+    // flex: 1 1 auto;
+
+  }
+
+  .socialList {
+    display: flex;
+  }
+
+  .socialList li {
+    margin: 10px;
+  }
+
+  .socialList a {
+    padding: 10px;
+  }
+
+  .socialList i {
+    font-size: 3rem;
+  }
+
+  .thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .thanks a {
+    text-decoration: underline;
+  } 
 
 }
