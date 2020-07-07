@@ -809,6 +809,7 @@ header .arrowContainer {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20%;
           flex: 1 1 20%;
+  padding: 10px;
 }
 
 .skills .skill {
