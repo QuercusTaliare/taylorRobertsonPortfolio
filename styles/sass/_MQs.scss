@@ -61,6 +61,15 @@
       font-size: 2rem;
     }
   }
+
+  .portfolio {
+
+    .project {
+      flex-direction: column;
+    }
+
+
+  }
 }
 
 @media (max-width: 600px) {
@@ -119,5 +128,23 @@
 
     }
 
+  }
+
+  .portfolio {
+
+    h2 span {
+      &::after {
+
+        right: 15px;
+      }
+    }
+
+    .projectLinks {
+      flex-direction: column;
+    }
+
+    .projectLinks li {
+      padding: 5px 10px;
+    }
   }
 }

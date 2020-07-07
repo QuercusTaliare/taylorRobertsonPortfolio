@@ -55,13 +55,19 @@
     background: $secondary;
   }
 
-  .projectLeft,
-  .projectRight {
+  .projectOne,
+  .projectThree {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .projectTextSide,
+  .projectImgSide {
     flex: 1 1 50%;
   }
 
   .projectImgContainer {
-    width: 400px;
+    width: 90%;
     border: solid 5px $dark-grey;
     margin: 0 auto;
   }
@@ -74,7 +80,7 @@
   }
 
   .projectText p {
-    width: 400px;
+    width: 90%;
     line-height: 1.5;
     letter-spacing: -0.5px;
   }
@@ -88,7 +94,8 @@
   }
 
   .projectLinks li {
-    padding: 10px;
+    padding: 15px 10px;
+    text-align: center;
   }
 
   .projectLinks a {
