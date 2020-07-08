@@ -315,55 +315,6 @@ a {
           animation: flickerAnimation 2s infinite;
 }
 
-.modalNav {
-  display: block;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: #C4FBFF;
-  z-index: 100;
-}
-
-.modalList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.modalExit {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  padding: 10px;
-}
-
-.modalList button {
-  border: none;
-  background: #05B6C3;
-  padding: 10px;
-  color: white;
-  border-radius: 4px;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-  font-weight: bold;
-  font-size: 2.2rem;
-}
-
-.modalNav.inactive {
-  display: none;
-}
-
 header {
   height: 100vh;
   background: #C4FBFF;
@@ -387,18 +338,30 @@ header .mainNav ul {
           justify-content: center;
 }
 
-header .mainNav li {
+header .mainNav .navListItem {
   padding: 0 20px;
 }
 
 header .mainNav .bars {
   display: none;
+  padding: 20px;
+}
+
+header .mainNav button {
+  background: #05B6C3;
+  border: none;
+  cursor: pointer;
+}
+
+header .mainNav button i {
+  font-size: 3rem;
+  color: #3F3F48;
 }
 
 header .mainNav a {
   color: white;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 header .mainNav a:hover, header .mainNav a:focus {
@@ -1102,6 +1065,65 @@ footer .thanks a {
   text-decoration: underline;
 }
 
+.modalNav {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #C4FBFF;
+  z-index: 100;
+}
+
+.modalList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modalExit {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 10px;
+}
+
+.modalList button {
+  border: none;
+  background: #05B6C3;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-weight: bold;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.modalList .navListItem {
+  padding: 10px 0;
+}
+
+.modalList a {
+  font-size: 2rem;
+  padding: 10px 0;
+}
+
+.modalNav.inactive {
+  display: none;
+}
+
 @media (max-width: 1080px) {
   header .circleOne,
   header .circleThree {
@@ -1175,6 +1197,17 @@ footer .thanks a {
 @media (max-width: 450px) {
   .wrapper {
     padding: 0;
+  }
+  header .mainNav {
+    position: fixed;
+    z-index: 90;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.3;
+    border: solid 3px #3F3F48;
+  }
+  header .mainNav:hover, header .mainNav:active, header .mainNav:focus {
+    opacity: 1;
   }
   header .mainNav ul {
     -webkit-box-pack: end;

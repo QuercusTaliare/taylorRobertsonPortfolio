@@ -1,24 +1,30 @@
 const app = {};
 
-// VARIABLES
-const hamburgerMenu = document.querySelector('.bars');
-const navListItem = document.querySelector('.navListItem');
+// VARIABLES *************
+
 const mainNav = document.querySelector('.mainNav');
+const navListItem = document.querySelector('.navListItem');
+const hamburgerMenu = document.querySelector('.bars');
+
 const modalNav = document.querySelector('.modalNav');
+const modalNavItems = document.querySelectorAll('.modalListItem');
 const modalExit = document.querySelector('.modalExit');
+
 const header = document.querySelector('header');
 const main = document.querySelector('main');
 const footer = document.querySelector('footer');
 
 const FOCUSABLE_SELECTORS = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, *[tabindex], *[contenteditable]';
 
-// FUNCTIONS
+
+// FUNCTIONS **************
 
 
 // SELECT FOCUSABLE ELEMENTS method
 // returns an array that holds every tab-able element in the DOM
 // Called in the Open Modal and Exit Modal methods
 app.selectFocusableElements = function() {
+
   // Creates three variables that hold nodelists full of every tab-able element on the page (outside the modal)
   const focusableHeaderElements = header.querySelectorAll(FOCUSABLE_SELECTORS);
   const focusableMainElements = main.querySelectorAll(FOCUSABLE_SELECTORS);
@@ -28,6 +34,7 @@ app.selectFocusableElements = function() {
   focusableElements = [...focusableHeaderElements, ...focusableMainElements, ...focusableFooterElements];
 
   return focusableElements;
+
 }
 
 // OPEN MODAL method - adapted from Noah Blon's codepen
@@ -67,9 +74,14 @@ app.exitModal = function(e) {
   footer.removeAttribute('aria-hidden');
 
   hamburgerMenu.focus();
+
 }
 
-// EVENT LISTENERS
+// EVENT LISTENERS ******************
 
 hamburgerMenu.addEventListener('click', app.openModal);
 modalExit.addEventListener('click', app.exitModal);
+
+modalNavItems.forEach(modalNavItem => {
+  modalNavItem.addEventListener('click', app.exitModal);
+})

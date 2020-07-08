@@ -14,18 +14,36 @@ header {
     justify-content: center;
   }
 
-  .mainNav li {
+  .mainNav .navListItem {
     padding: 0 20px;
   }
 
   .mainNav .bars {
     display: none;
+    padding: 20px;
+  }
+
+  .mainNav button {
+    background: $primary;
+    border: none;
+    cursor: pointer;
+    
+    // STYLE FOCUS?
+    // &:focus .mainNav {
+    //   opacity: 1;
+    // }
+
+  }
+
+  .mainNav button i {
+    font-size: 3rem;
+    color: $dark-grey;
   }
 
   .mainNav a {
     color: white;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     &:hover,
     &:focus {
@@ -37,9 +55,6 @@ header {
     display: none;
   }
   
-
-  
-
   .headerSectionContainer {
     height: 85vh;
     display: flex;
