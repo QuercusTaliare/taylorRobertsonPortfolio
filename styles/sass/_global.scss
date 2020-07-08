@@ -69,6 +69,11 @@ a {
     color: $highlight;
     font-size: 2.5rem;
     animation: flickerAnimation 2s infinite;
-  }
+}
+
+.arrowContainer a:hover i,
+.arrowContainer a:focus i {
+    animation: flickerAnimation 0s 1;
+}
 
 

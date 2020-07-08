@@ -121,13 +121,11 @@
       border: solid 3px $dark-grey;
 
       &:hover,
-      &:active,
-      &:focus {
+      &:focus-within {
         opacity: 1;
       }
+      
     }
-
-    
 
     .mainNav ul {
       justify-content: flex-end;

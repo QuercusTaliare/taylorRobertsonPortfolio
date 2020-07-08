@@ -87,6 +87,11 @@
 
   .projectText a {
     text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $highlight;
+    }
   }
 
   .projectLinks {

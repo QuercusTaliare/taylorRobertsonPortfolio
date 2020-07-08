@@ -29,9 +29,10 @@ header {
     cursor: pointer;
     
     // STYLE FOCUS?
-    // &:focus .mainNav {
-    //   opacity: 1;
-    // }
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
 
   }
 
@@ -144,8 +145,8 @@ header {
 
   .arrowContainer {
     height: 5vh;
-  }
 
+  }
 
 }
 

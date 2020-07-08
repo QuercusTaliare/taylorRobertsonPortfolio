@@ -31,6 +31,11 @@ footer {
 
   .thanks a {
     text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration-color: $highlight;
+    }
   } 
 
 }

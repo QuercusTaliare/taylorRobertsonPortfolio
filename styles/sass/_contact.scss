@@ -93,14 +93,16 @@
 
   .socialList a {
     padding: 10px;
+
+  }
+
+  .socialList a:hover i,
+  .socialList a:focus i {
+    color: $highlight;
   }
 
   .socialList i {
     font-size: 3rem;
-  }
-
-  .contactForm {
-    // background: $secondary;
   }
 
   form {
@@ -140,6 +142,11 @@
     font-family: $main-font;
     padding: 5px;
 
+    &:hover,
+    &:focus {
+      border: solid 2px $highlight;
+    }
+
   }
 
   form button {
@@ -151,5 +158,10 @@
     text-transform: uppercase;
     font-family: $main-font;
     font-weight: 700;
+
+    &:hover,
+    &:focus {
+      color: white;
+    }
   }
 }
