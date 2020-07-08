@@ -458,8 +458,8 @@ header .circleTwo {
   top: -90px;
   right: -130px;
   z-index: 40;
-  -webkit-filter: sepia(100%);
-          filter: sepia(100%);
+  -webkit-filter: sepia(25%);
+          filter: sepia(25%);
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in;
 }
@@ -638,7 +638,7 @@ header .arrowContainer {
 
 .portfolio h2 {
   text-align: center;
-  padding: 60px 0;
+  padding: 100px 0 60px 0;
 }
 
 .portfolio h2 span {
@@ -1244,7 +1244,7 @@ footer .thanks a:hover, footer .thanks a:focus {
             flex-direction: column;
   }
   .portfolio .projectImgSide {
-    padding: 0 0 50px 0;
+    padding: 0 0 100px 0;
   }
   .contact {
     -webkit-box-orient: vertical;
@@ -1274,6 +1274,7 @@ footer .thanks a:hover, footer .thanks a:focus {
     padding: 0;
   }
   header .mainNav {
+    height: auto;
     position: fixed;
     z-index: 90;
     border-radius: 50%;
@@ -1295,11 +1296,19 @@ footer .thanks a:hover, footer .thanks a:focus {
   header .mainNav .navListItem {
     display: none;
   }
+  header .nameContainer {
+    margin: 0 0 300px 0;
+  }
   header .name h1 {
     font-size: 3rem;
   }
   header .name p {
     font-size: 2rem;
+  }
+  header .circleTwo {
+    width: 250px;
+    height: 250px;
+    top: 300px;
   }
   .about .circleContent h2 {
     font-size: 3rem;

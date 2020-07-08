@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    // border: solid 1px red;
 }
 
 html {
@@ -54,6 +53,7 @@ a {
     padding: 0 3vw;
 }
 
+// Animation discovered on this Stack Overflow thread
 // https://stackoverflow.com/questions/23985018/simple-css-animation-loop-fading-in-out-loading-text
   @keyframes flickerAnimation {
     0%   { opacity:1; }

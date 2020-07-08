@@ -69,7 +69,7 @@
     }
 
     .projectImgSide {
-      padding: 0 0 50px 0;
+      padding: 0 0 100px 0;
     }
 
   }
@@ -117,6 +117,7 @@
   header {
 
     .mainNav {
+      height: auto;
       position: fixed;
       z-index: 90;
       border-radius: 50%;
@@ -143,11 +144,21 @@
       display: none;
     }
 
+    .nameContainer {
+      margin: 0 0 300px 0;
+    }
+
     .name h1 {
       font-size: 3rem;
     }
     .name p {
       font-size: 2rem;
+    }
+
+    .circleTwo {
+      width: 250px;
+      height: 250px;
+      top: 300px;
     }
 
   }
