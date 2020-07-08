@@ -965,7 +965,7 @@ header .arrowContainer {
 }
 
 .contact .socialList a {
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
 }
 
 .contact .socialList a:hover i,
@@ -1038,6 +1038,7 @@ header .arrowContainer {
   text-transform: uppercase;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .contact form button:hover, .contact form button:focus {

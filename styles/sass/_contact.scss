@@ -12,11 +12,9 @@
   }
 
   .contactTitle {
-    // background: $secondary;
     align-items: center;
     position: relative;
 
-    
   }
 
   .contactTitle h2 {
@@ -60,14 +58,6 @@
 
   }
 
-  .contactTitle .contactImgContainer {
-
-    // position: relative;
-
-  }
-
-  
-
   .contactTitle img {
     border-radius: 50%;
     width: 30vw;
@@ -92,7 +82,7 @@
   }
 
   .socialList a {
-    padding: 10px;
+    padding: 20px 10px 10px 10px;
 
   }
 
@@ -128,10 +118,7 @@
 
   form input {
     padding: 5px 50px;
-    // border-radius: 4px;
-    // border: none;
-    // font-size: 2rem;
-    // font-family: $main-font;
+    
   }
 
   form input,
@@ -158,6 +145,7 @@
     text-transform: uppercase;
     font-family: $main-font;
     font-weight: 700;
+    cursor: pointer;
 
     &:hover,
     &:focus {
