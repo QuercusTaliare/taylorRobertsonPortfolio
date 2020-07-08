@@ -315,6 +315,55 @@ a {
           animation: flickerAnimation 2s infinite;
 }
 
+.modalNav {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #C4FBFF;
+  z-index: 100;
+}
+
+.modalList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modalExit {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 10px;
+}
+
+.modalList button {
+  border: none;
+  background: #05B6C3;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.modalNav.inactive {
+  display: none;
+}
+
 header {
   height: 100vh;
   background: #C4FBFF;
@@ -354,6 +403,10 @@ header .mainNav a {
 
 header .mainNav a:hover, header .mainNav a:focus {
   border-bottom: solid 5px #ef4c0a;
+}
+
+header .mainNav.inactive {
+  display: none;
 }
 
 header .headerSectionContainer {
@@ -1131,7 +1184,7 @@ footer .thanks a {
   header .mainNav .bars {
     display: block;
   }
-  header .mainNav .desktopItem {
+  header .mainNav .navListItem {
     display: none;
   }
   header .name h1 {

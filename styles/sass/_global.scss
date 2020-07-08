@@ -70,3 +70,45 @@ a {
     font-size: 2.5rem;
     animation: flickerAnimation 2s infinite;
   }
+
+
+.modalNav {
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: $secondary;
+    z-index: 100;
+
+}
+
+.modalList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalExit {
+    align-self: flex-end;
+    padding: 10px;
+}
+
+.modalList button {
+    border: none;
+    background: $primary;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    align-self: end;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+
+.modalNav.inactive {
+display: none;
+
+}

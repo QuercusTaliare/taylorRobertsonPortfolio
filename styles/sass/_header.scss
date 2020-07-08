@@ -33,6 +33,13 @@ header {
     }
   }
 
+  .mainNav.inactive {
+    display: none;
+  }
+  
+
+  
+
   .headerSectionContainer {
     height: 85vh;
     display: flex;
