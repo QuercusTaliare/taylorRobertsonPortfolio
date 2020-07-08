@@ -68,6 +68,10 @@
       flex-direction: column;
     }
 
+    .projectImgSide {
+      padding: 0 0 50px 0;
+    }
+
   }
 
   .contact {
@@ -124,7 +128,7 @@
       &:focus-within {
         opacity: 1;
       }
-      
+
     }
 
     .mainNav ul {
@@ -218,5 +222,12 @@
       font-size: 1.6rem;
     }
 
+  }
+
+  footer {
+
+    .personal p {
+      font-size: 1.6rem;
+    }
   }
 }

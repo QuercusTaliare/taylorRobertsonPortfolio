@@ -20,6 +20,12 @@
 .modalExit {
   align-self: flex-end;
   padding: 10px;
+
+  &:hover button,
+  &:focus-within button {
+    background: $highlight;
+  }
+  
 }
 
 .modalList button {
@@ -34,8 +40,13 @@
   cursor: pointer;
 }
 
-.modalList .navListItem {
+.modalList .modalListItem {
   padding: 10px 0;
+
+  &:hover,
+  &:focus-within {
+    text-decoration: underline $highlight;
+  }
 }
 
 .modalList a {

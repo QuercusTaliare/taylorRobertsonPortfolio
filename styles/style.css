@@ -1131,6 +1131,11 @@ footer .thanks a:hover, footer .thanks a:focus {
   padding: 10px;
 }
 
+.modalExit:hover button,
+.modalExit:focus-within button {
+  background: #ef4c0a;
+}
+
 .modalList button {
   border: none;
   background: #05B6C3;
@@ -1145,8 +1150,13 @@ footer .thanks a:hover, footer .thanks a:focus {
   cursor: pointer;
 }
 
-.modalList .navListItem {
+.modalList .modalListItem {
   padding: 10px 0;
+}
+
+.modalList .modalListItem:hover, .modalList .modalListItem:focus-within {
+  -webkit-text-decoration: underline #ef4c0a;
+          text-decoration: underline #ef4c0a;
 }
 
 .modalList a {
@@ -1204,6 +1214,9 @@ footer .thanks a:hover, footer .thanks a:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .portfolio .projectImgSide {
+    padding: 0 0 50px 0;
   }
   .contact {
     -webkit-box-orient: vertical;
@@ -1297,6 +1310,9 @@ footer .thanks a:hover, footer .thanks a:focus {
   }
   .contact form input,
   .contact form textarea {
+    font-size: 1.6rem;
+  }
+  footer .personal p {
     font-size: 1.6rem;
   }
 }
