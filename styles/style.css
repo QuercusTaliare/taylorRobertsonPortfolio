@@ -680,7 +680,7 @@ header .arrowContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px 0;
+  padding: 20px 0 150px 0;
 }
 
 .portfolio .project:nth-child(odd) {
@@ -837,8 +837,8 @@ header .arrowContainer {
 
 .skills li {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 20%;
-          flex: 1 1 20%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
   padding: 10px;
 }
 
@@ -1114,6 +1114,11 @@ footer .attributions {
   border: solid 1px black;
 }
 
+footer .thanks .icons,
+footer .thanks .photos {
+  padding: 20px 0 0 0;
+}
+
 footer .thanks p {
   padding: 5px;
 }
@@ -1210,8 +1215,13 @@ footer .thanks a:hover, footer .thanks a:focus {
   header .circleTwo {
     width: 200px;
     height: 200px;
-    top: 10px;
+    top: 275px;
     right: 20px;
+  }
+  header .circleOne,
+  header .circleThree {
+    top: 425px;
+    right: 100px;
   }
   .about .circleContent {
     font-size: 1.6rem;
@@ -1219,6 +1229,12 @@ footer .thanks a:hover, footer .thanks a:focus {
 }
 
 @media (max-width: 850px) {
+  header .name h1 {
+    font-size: 3rem;
+  }
+  header .name p {
+    font-size: 2rem;
+  }
   .about .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1243,9 +1259,6 @@ footer .thanks a:hover, footer .thanks a:focus {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .portfolio .projectImgSide {
-    padding: 0 0 100px 0;
-  }
   .contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1255,6 +1268,9 @@ footer .thanks a:hover, footer .thanks a:focus {
 }
 
 @media (max-width: 600px) {
+  header .nameContainer {
+    padding: 0 0 180px 0;
+  }
   .about .circle:after {
     display: none;
   }
@@ -1263,6 +1279,9 @@ footer .thanks a:hover, footer .thanks a:focus {
   }
   .about .circleContent p {
     text-align: left;
+  }
+  .contact .contactTitle h2 span::after {
+    right: 15px;
   }
   .contact .contactTitle p {
     font-size: 2rem;
@@ -1296,25 +1315,34 @@ footer .thanks a:hover, footer .thanks a:focus {
   header .mainNav .navListItem {
     display: none;
   }
-  header .nameContainer {
-    margin: 0 0 300px 0;
-  }
   header .name h1 {
     font-size: 3rem;
   }
   header .name p {
     font-size: 2rem;
   }
-  header .circleTwo {
-    width: 250px;
-    height: 250px;
-    top: 300px;
+  header .circleOne {
+    width: 180px;
+    height: 180px;
+    top: 200px;
+    right: 70px;
+    opacity: 0.15;
+  }
+  header .circleThree {
+    width: 180px;
+    height: 180px;
+    top: 250px;
+    right: 80px;
+    opacity: 0.15;
   }
   .about .circleContent h2 {
     font-size: 3rem;
   }
   .about .circleContent p {
     font-size: 1.6rem;
+  }
+  .portfolio .project {
+    padding: 20px 0 80px 0;
   }
   .portfolio h2 span::after {
     right: 15px;
