@@ -82,10 +82,9 @@ app.exitModal = function(e) {
   main.removeAttribute('aria-hidden');
   footer.removeAttribute('aria-hidden');
 
-  hamburgerMenu.focus();
-
 }
 
+// INIT method
 app.init = function() {
 
   // SELECTOR VARIABLES
@@ -112,5 +111,6 @@ app.init = function() {
 
 }
 
+// DOCUMENT READY
 app.ready(() => { app.init() });
 
