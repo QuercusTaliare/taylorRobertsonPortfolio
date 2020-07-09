@@ -10,12 +10,9 @@
     position: relative;
 
     &::before {
-      content: "";
-      width: 0; 
-      height: 0; 
+      @include triangle;
       border-top: 100px solid transparent;
       border-left: 100px solid $secondary;
-      position: absolute;
       transform: rotate(180deg);
       top: -40px;
       right: -10px;
@@ -23,21 +20,10 @@
     }
 
     &::after {
-      display: block;
-      content: "";
-      background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 65%;
-      position: absolute;
-      transform: rotate(45deg);
+      @include squiggle;
       top: -70px;
-      left: 110px;
-      width: 100px;
-      height: 100px;
+      left: 110px; 
     }
-
-
   }
 
   ul {
@@ -62,7 +48,7 @@
   }
 
   p {
-    color: dark-grey;
+    color: $dark-grey;
     font-size: 2rem;
     text-transform: uppercase;
   }
@@ -71,4 +57,4 @@
     padding: 10px 0;
   }
 
-}
+} // Skills style ends

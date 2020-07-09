@@ -14,13 +14,10 @@
   .contactTitle {
     align-items: center;
     position: relative;
-
   }
 
   .contactTitle h2 {
     padding: 20px 0;
-    
-
   }
 
   .contactTitle h2 span {
@@ -28,13 +25,9 @@
     z-index: 10;
 
     &::before {
-
-      content: "";
-      width: 0; 
-      height: 0; 
+      @include triangle;
       border-top: 100px solid transparent;
       border-left: 100px solid $primary-light;
-      position: absolute;
       transform: rotate(270deg);
       top: -40px;
       right: -10px;
@@ -42,28 +35,17 @@
     }
 
     &::after {
-      display: block;
-      content: "";
-      background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 65%;
-      position: absolute;
-      transform: rotate(45deg);
+      @include squiggle;
       bottom: -55px;
       right: -50px;
-      width: 100px;
-      height: 100px;
     }
-
   }
 
   .contactTitle img {
     border-radius: 50%;
     width: 30vw;
     height: 30vw;
-    object-fit: cover;
-    
+    object-fit: cover;  
   }
 
   .contactTitle p {
@@ -83,7 +65,6 @@
 
   .socialList a {
     padding: 20px 10px 10px 10px;
-
   }
 
   .socialList a:hover i,
@@ -118,7 +99,6 @@
 
   form input {
     padding: 5px 50px;
-    
   }
 
   form input,
@@ -133,7 +113,6 @@
     &:focus {
       border: solid 2px $highlight;
     }
-
   }
 
   form button {
@@ -152,4 +131,5 @@
       color: white;
     }
   }
-}
+
+} // Contact style ends

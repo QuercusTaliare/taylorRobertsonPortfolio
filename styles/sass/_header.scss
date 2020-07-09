@@ -1,4 +1,5 @@
 header {
+
   height: 100vh;
   background: $secondary;
  
@@ -28,7 +29,6 @@ header {
     border: none;
     cursor: pointer;
     
-    // STYLE FOCUS?
     &:hover,
     &:focus {
       opacity: 1;
@@ -61,7 +61,6 @@ header {
     display: flex;
     position: relative;
     overflow: hidden;
-    
   }
 
   .name {
@@ -90,63 +89,52 @@ header {
   .name, 
   .circles {
     flex: 1 1 50%;
-    
   }
 
   .circle {
     border-radius: 50%;
-    
+  }
+
+  // COLOUR CIRCLES
+  .circleOne,
+  .circleThree {
+    background: $primary;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transition: all 0.7s ease-in;
   }
 
   .circleOne {
-    background: $primary;
-    opacity: 0.5;
-    width: 400px;
-    height: 400px;
-    z-index: 10;
-    position: absolute;
     top: -70px;
     right: 280px;
-    
-  }
-
-  .circleTwo,
-  .circleThree {
-    object-fit: cover;
-  }
-
-  .circleTwo {
-    background: $primary;
-    width: 600px;
-    height: 600px;
-    position: absolute;
-    top: -90px;
-    right: -130px;
-    z-index: 40;
-    filter: sepia(25%);
-    transition: all 1s ease-in;
+    z-index: 10;
+    opacity: 0.5;
   }
 
   .circleThree {
-    background: $primary;
-    width: 400px;
-    height: 400px;
-    position: absolute;
     top: 200px;
     right: 220px;
     z-index: 30;
     opacity: 0.9;
   }
 
-  .circleOne,
-  .circleThree {
-    transition: all 0.7s ease-in;
+  // CIRCLE WITH IMAGE
+  .circleTwo {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: -90px;
+    right: -130px;
+    z-index: 40;
+    filter: sepia(50%);
+    object-fit: cover;
+    transition: all 1s ease-in;
   }
 
   .arrowContainer {
     height: 5vh;
-
   }
 
-}
+} // Header styling ends
 

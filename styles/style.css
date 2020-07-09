@@ -245,17 +245,16 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-family: "Spartan", sans-serif;
+  color: #3F3F48;
   font-weight: 700;
 }
 
 h2 {
   text-transform: uppercase;
-  color: #3F3F48;
   font-size: 4rem;
 }
 
 h3 {
-  color: #3F3F48;
   font-size: 3rem;
 }
 
@@ -433,52 +432,43 @@ header .circle {
   border-radius: 50%;
 }
 
-header .circleOne {
+header .circleOne,
+header .circleThree {
   background: #05B6C3;
-  opacity: 0.5;
+  position: absolute;
   width: 400px;
   height: 400px;
-  z-index: 10;
-  position: absolute;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+
+header .circleOne {
   top: -70px;
   right: 280px;
-}
-
-header .circleTwo,
-header .circleThree {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-header .circleTwo {
-  background: #05B6C3;
-  width: 600px;
-  height: 600px;
-  position: absolute;
-  top: -90px;
-  right: -130px;
-  z-index: 40;
-  -webkit-filter: sepia(25%);
-          filter: sepia(25%);
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  z-index: 10;
+  opacity: 0.5;
 }
 
 header .circleThree {
-  background: #05B6C3;
-  width: 400px;
-  height: 400px;
-  position: absolute;
   top: 200px;
   right: 220px;
   z-index: 30;
   opacity: 0.9;
 }
 
-header .circleOne,
-header .circleThree {
-  -webkit-transition: all 0.7s ease-in;
-  transition: all 0.7s ease-in;
+header .circleTwo {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -90px;
+  right: -130px;
+  z-index: 40;
+  -webkit-filter: sepia(50%);
+          filter: sepia(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 header .arrowContainer {
@@ -527,9 +517,9 @@ header .arrowContainer {
   content: "";
   width: 0;
   height: 0;
+  position: absolute;
   border-top: 80px solid transparent;
   border-left: 80px solid #C4FBFF;
-  position: absolute;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   top: -20px;
@@ -541,9 +531,9 @@ header .arrowContainer {
   content: "";
   width: 0;
   height: 0;
+  position: absolute;
   border-top: 80px solid transparent;
   border-left: 80px solid #C4FBFF;
-  position: absolute;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   bottom: -20px;
@@ -575,10 +565,10 @@ header .arrowContainer {
   position: absolute;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  bottom: -70px;
-  left: 27%;
   width: 100px;
   height: 100px;
+  bottom: -70px;
+  left: 27%;
 }
 
 .about .circle {
@@ -650,9 +640,9 @@ header .arrowContainer {
   content: "";
   width: 0;
   height: 0;
+  position: absolute;
   border-top: 100px solid transparent;
   border-left: 100px solid #40BEC8;
-  position: absolute;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   top: -40px;
@@ -670,10 +660,10 @@ header .arrowContainer {
   position: absolute;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: 0px;
-  right: -60px;
   width: 100px;
   height: 100px;
+  top: 0px;
+  right: -60px;
 }
 
 .portfolio .project {
@@ -801,9 +791,9 @@ header .arrowContainer {
   content: "";
   width: 0;
   height: 0;
+  position: absolute;
   border-top: 100px solid transparent;
   border-left: 100px solid #C4FBFF;
-  position: absolute;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   top: -40px;
@@ -821,10 +811,10 @@ header .arrowContainer {
   position: absolute;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: -70px;
-  left: 110px;
   width: 100px;
   height: 100px;
+  top: -70px;
+  left: 110px;
 }
 
 .skills ul {
@@ -862,7 +852,7 @@ header .arrowContainer {
 }
 
 .skills p {
-  color: dark-grey;
+  color: #3F3F48;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -913,9 +903,9 @@ header .arrowContainer {
   content: "";
   width: 0;
   height: 0;
+  position: absolute;
   border-top: 100px solid transparent;
   border-left: 100px solid #40BEC8;
-  position: absolute;
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   top: -40px;
@@ -933,10 +923,10 @@ header .arrowContainer {
   position: absolute;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  bottom: -55px;
-  right: -50px;
   width: 100px;
   height: 100px;
+  bottom: -55px;
+  right: -50px;
 }
 
 .contact .contactTitle img {

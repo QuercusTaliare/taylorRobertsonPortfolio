@@ -1,4 +1,5 @@
 @media (max-width: 1080px) {
+  
   header {
 
     .circleOne,
@@ -9,14 +10,12 @@
       height: 0px;
     }
 
+  } // Header 1080px ends
 
-
-  }
-
-
-}
+} // 1080px ends
 
 @media (max-width: 950px) {
+  
   header {
 
     .circleTwo {
@@ -31,7 +30,8 @@
       top: 425px;
       right: 100px;
     }
-  }
+
+  } // Header 950px ends
 
   .about {
 
@@ -39,9 +39,9 @@
       font-size: 1.6rem;
     }
 
+  } // About 950px ends
 
-  }
-}
+} // 950px ends
 
 @media (max-width: 850px) {
 
@@ -72,11 +72,9 @@
 
     }
 
-  }
+  } // Header 850px ends
 
   .about {
-
-    
 
     .aboutContainer {
       flex-direction: column;
@@ -94,7 +92,8 @@
     .circleContent {
       font-size: 2rem;
     }
-  }
+
+  } // About 850px ends
 
   .portfolio {
 
@@ -102,13 +101,15 @@
       flex-direction: column;
     }
 
-  }
+  } // Portfolio 850px ends
 
   .contact {
-    flex-direction: column;
-  }
 
-}
+    flex-direction: column;
+
+  } // Contact 850px ends
+
+} // 850px ends
 
 @media (max-width: 600px) {
 
@@ -118,9 +119,8 @@
       padding: 0 0 180px 0;
     }
 
-  }
-  
-  
+  } // Header 600px ends
+   
   .about {
 
     .circle:after {
@@ -135,9 +135,7 @@
       text-align: left;
     }
     
-
-
-  }
+  } // About 600px ends
 
   .contact {
 
@@ -154,10 +152,9 @@
       font-size: 2rem;
     }
 
-    
+  } // Contact 600px ends
 
-  }
-}
+} // 600px ends
 
 @media (max-width: 450px) {
   
@@ -180,7 +177,6 @@
       &:focus-within {
         opacity: 1;
       }
-
     }
 
     .mainNav ul {
@@ -198,11 +194,12 @@
     .name h1 {
       font-size: 3rem;
     }
+
     .name p {
       font-size: 2rem;
     }
 
-  }
+  } // Header 450px ends
 
   .about {
 
@@ -216,7 +213,7 @@
 
     }
 
-  }
+  } // About 450px ends
 
   .portfolio {
 
@@ -225,8 +222,8 @@
     }
 
     h2 span {
-      &::after {
 
+      &::after {
         right: 15px;
       }
     }
@@ -238,15 +235,19 @@
     .projectLinks li {
       padding: 5px 10px;
     }
-  }
+
+  } // Portfolio 450px ends
 
   .skills {
+
     h2 span {
+
       &::after {
         left: 80px;
       }
     }
-  }
+
+  } // Skills 450px ends
 
   .contact {
     
@@ -278,12 +279,14 @@
       font-size: 1.6rem;
     }
 
-  }
+  } // Contact 450px ends
 
   footer {
 
     .personal p {
       font-size: 1.6rem;
     }
-  }
-}
+
+  } // Footer 450px ends
+
+} // 450px ends

@@ -12,12 +12,9 @@
     z-index: 10;
 
     &::before {
-      content: "";
-      width: 0; 
-      height: 0; 
+      @include triangle;
       border-top: 100px solid transparent;
       border-left: 100px solid $primary-light;
-      position: absolute;
       transform: rotate(270deg);
       top: -40px;
       right: -10px;
@@ -25,18 +22,9 @@
     }
 
     &::after {
-      display: block;
-      content: "";
-      background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 65%;
-      position: absolute;
-      transform: rotate(45deg);
+      @include squiggle;
       top: 0px;
       right: -60px;
-      width: 100px;
-      height: 100px;
     }
 
 
@@ -134,6 +122,4 @@
     padding: 10px 0;
   }
 
-
-
-}
+} // Portfolio styles ends

@@ -3,10 +3,8 @@
   background: $primary;
 
   .aboutContainer {
-
     display: flex;
     align-items: center;
-    
   }
 
   .aboutLeft {
@@ -23,12 +21,9 @@
     z-index: 10;
   
     &::before {
-      content: "";
-      width: 0; 
-      height: 0; 
+      @include triangle;
       border-top: 80px solid transparent;
       border-left: 80px solid $secondary;
-      position: absolute;
       transform: rotate(90deg);
       top: -20px;
       left: -20px;
@@ -36,12 +31,9 @@
     }
 
     &::after {
-      content: "";
-      width: 0; 
-      height: 0; 
+      @include triangle;
       border-top: 80px solid transparent;
       border-left: 80px solid $secondary;
-      position: absolute;
       transform: rotate(270deg);
       bottom: -20px;
       right: -20px;
@@ -49,8 +41,6 @@
     }
 
   }
-
-
 
   .aboutRight {
     flex: 1 1 60%;
@@ -64,23 +54,14 @@
     position: relative;
 
     &::after {
-      display: block;
-      content: "";
-      background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 65%;
-      position: absolute;
-      transform: rotate(45deg);
+      @include squiggle;
       bottom: -70px;
       left: 27%;
-      width: 100px;
-      height: 100px;
-
     }
+
   }
 
-  // The solution to put text inside a circle was copied from Chris Bracco in his codepen below
+  // The solution to put text inside a circle was heavily adapted from Chris Bracco's codepen below
   // https://codepen.io/cbracco/pen/qnduh
   .circle {
   position: relative;

@@ -3,32 +3,37 @@ $heading-font: 'Spartan', sans-serif;
 $main-font: 'Ubuntu', sans-serif;
 
 // COLOURS
-$mint: #A3D0CB;
-$off-white: #DDE8E8;
-$dark-grey: #3F3F48;
-$grey: #718084;
-$purple: #473672;
-
-
 $primary: #05B6C3;
 $primary-light: #40BEC8;
 $secondary: #C4FBFF;
 $secondary-light: #D0F2F4;
-$highlightTwo: #E6AF2E;
 $highlight: #ef4c0a;
-// $highlight-dark: #c48c0c;
-
+$dark-grey: #3F3F48;
 $light-grey: #909090;
-// PHOTOS
 
-// TREE PHOTO
-// <span>Photo by <a href="https://unsplash.com/@toddquackenbush?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Todd Quackenbush</a> on <a href="https://unsplash.com/s/photos/trees?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+// TRIANGLES 
 
-// COMPUTER PHOTO
-// <span>Photo by <a href="https://unsplash.com/@agkdesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alex Knight</a> on <a href="https://unsplash.com/s/photos/computer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+@mixin triangle {
+  content: "";
+  width: 0; 
+  height: 0; 
+  position: absolute;
+}
 
-// TELEPHONE PHOTO
-// <span>Photo by <a href="https://unsplash.com/@antoinebarres?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Antoine Barrès</a> on <a href="https://unsplash.com/s/photos/telephone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+// SQUIGGLY LINES
+
+@mixin squiggle {
+  display: block;
+  content: "";
+  background-image: url(../assets/icons8-squiggly-line-100-dark-grey.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 100px;
+  height: 100px;
+}
 
 // Icons
 
