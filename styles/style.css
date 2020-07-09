@@ -1235,6 +1235,20 @@ footer .thanks a:hover, footer .thanks a:focus {
   header .name p {
     font-size: 2rem;
   }
+  header .circleOne {
+    width: 180px;
+    height: 180px;
+    top: 200px;
+    right: 70px;
+    opacity: 0.15;
+  }
+  header .circleThree {
+    width: 180px;
+    height: 180px;
+    top: 250px;
+    right: 80px;
+    opacity: 0.15;
+  }
   .about .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1320,20 +1334,6 @@ footer .thanks a:hover, footer .thanks a:focus {
   }
   header .name p {
     font-size: 2rem;
-  }
-  header .circleOne {
-    width: 180px;
-    height: 180px;
-    top: 200px;
-    right: 70px;
-    opacity: 0.15;
-  }
-  header .circleThree {
-    width: 180px;
-    height: 180px;
-    top: 250px;
-    right: 80px;
-    opacity: 0.15;
   }
   .about .circleContent h2 {
     font-size: 3rem;

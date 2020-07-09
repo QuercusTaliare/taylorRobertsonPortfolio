@@ -54,6 +54,24 @@
     .name p {
       font-size: 2rem;
     }
+
+    .circleOne {
+      width: 180px;
+      height: 180px;
+      top: 200px;
+      right: 70px;
+      opacity: 0.15;
+    }
+
+    .circleThree {
+      width: 180px;
+      height: 180px;
+      top: 250px;
+      right: 80px;
+      opacity: 0.15;
+
+    }
+
   }
 
   .about {
@@ -177,36 +195,11 @@
       display: none;
     }
 
-    
-
     .name h1 {
       font-size: 3rem;
     }
     .name p {
       font-size: 2rem;
-    }
-
-    // .circleTwo {
-    //   width: 200px;
-    //   height: 200px;
-    //   top: 375px;
-    // }
-
-    .circleOne {
-      width: 180px;
-      height: 180px;
-      top: 200px;
-      right: 70px;
-      opacity: 0.15;
-    }
-
-    .circleThree {
-      width: 180px;
-      height: 180px;
-      top: 250px;
-      right: 80px;
-      opacity: 0.15;
-
     }
 
   }
