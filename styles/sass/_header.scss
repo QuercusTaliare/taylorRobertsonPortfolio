@@ -42,7 +42,7 @@ header {
   }
 
   .mainNav a {
-    color: white;
+    color: black;
     font-weight: 700;
     font-size: 1.8rem;
 
@@ -71,7 +71,7 @@ header {
   }
 
   .name h1 {
-    color: $dark-grey;
+    color: $off-black;
     font-size: 6rem;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -81,7 +81,7 @@ header {
 
   .name p {
     font-weight: 700;
-    color: $light-grey;
+    color: $dark-grey;
     font-size: 3rem;
     transition: all 0.6s ease-in;
   }
