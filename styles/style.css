@@ -239,6 +239,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Ubuntu", sans-serif;
+  background: #f8f8ff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1015,6 +1016,7 @@ header .arrowContainer {
   font-size: 2rem;
   font-family: "Ubuntu", sans-serif;
   padding: 5px;
+  background: #f8f8ff;
 }
 
 .contact form input:hover, .contact form input:focus,
