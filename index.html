@@ -390,7 +390,7 @@
             <img src="./assets/telephone.jpg" alt="old-timey black telephone within a red phone booth">
           </div>
 
-          <p>josephtaylorrobertson@gmail.com</p>
+          <p>josephtaylorrobertson <span class="emailWrap">{at} gmail {dot} com</span></p>
           
           <nav>
             <ul class="socialList">
@@ -402,6 +402,11 @@
               <li>
                 <a href="https://twitter.com/taylorRdev" target="_blank">
                   <i class="fab fa-twitter" title="Taylor's Twitter page"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/jtaylorrobertson/" target="_blank">
+                  <i class="fab fa-linkedin" title="Taylor's LinkedIn page"></i>
                 </a>
               </li>
               <li>
@@ -421,21 +426,21 @@
             <div class="formContainer">
               <label for="name">
                 <span class="labelText">Name</span>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
               </label>
             </div>
             
             <div class="formContainer">
               <label for="email">
                 <span class="labelText">Email</span>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
               </label>
             </div>
 
             <div class="formContainer">
               <label for="message">
                 <span class="labelText">Leave Message</span>
-                <textarea name="message" id="message" cols="20" rows="10"></textarea>
+                <textarea name="message" id="message" cols="20" rows="10" required></textarea>
               </label>
             </div>
 

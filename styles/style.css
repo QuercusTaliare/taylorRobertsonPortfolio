@@ -779,7 +779,7 @@ header .arrowContainer {
 }
 
 .skills h2 {
-  padding: 60px 0;
+  padding: 100px 0 60px 0;
   text-align: center;
 }
 
@@ -865,7 +865,7 @@ header .arrowContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px 0 0 0;
+  padding: 100px 0 60px 0;
   background: #D0F2F4;
 }
 
@@ -942,6 +942,10 @@ header .arrowContainer {
   padding: 60px 0 10px 0;
   font-weight: 700;
   font-size: 2.5rem;
+}
+
+.contact .contactTitle .emailWrap {
+  display: inline-block;
 }
 
 .contact .socialList {
@@ -1047,6 +1051,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 15px 0;
+}
+
+footer .personal {
+  padding: 10px 0;
 }
 
 footer .personal p {

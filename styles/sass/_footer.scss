@@ -4,6 +4,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px 0;
+
+  .personal {
+    padding: 10px 0;
+  }
 
   .personal p {
     font-size: 2rem;
