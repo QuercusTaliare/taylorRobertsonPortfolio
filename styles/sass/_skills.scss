@@ -1,9 +1,7 @@
 .skills {
-
   h2 {
     padding: 100px 0 60px 0;
     text-align: center;
-
   }
 
   h2 span {
@@ -22,7 +20,7 @@
     &::after {
       @include squiggle;
       top: -70px;
-      left: 110px; 
+      left: 110px;
     }
   }
 
@@ -34,7 +32,6 @@
   li {
     flex: 1 1 25%;
     padding: 10px;
-    
   }
 
   .skill {
@@ -51,10 +48,10 @@
     color: $dark-grey;
     font-size: 2rem;
     text-transform: uppercase;
+    text-align: center;
   }
-  
+
   .arrowContainer {
     padding: 10px 0;
   }
-
 } // Skills style ends
